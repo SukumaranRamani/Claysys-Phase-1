@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="studentForm"> 
+        <div class="container">
+                <h1 style="font-size:x-large;">STUDENT INFORMATION FORM</h1>
+
+                <hr>
+
+                <p style="font-size:large; font-weight: bold; padding-bottom: 5%;">General Information</p>
+                
+            <h4 style="font-size:medium">Student Name</h4>
+
+            <div class="grid-container">
+                <div class="grid-item"><input type="text" id="firstname" name="firstname" placeholder="Firstname" required><label style="font-size: small;color: darkgrey;">First Name</label></div>
+                <div class="grid-item"><input type="text" id="middlename" name="firstname" placeholder="Middlename" required><label style="font-size: small;color: darkgrey;">Middle Name</label></div>
+                <div class="grid-item"><input type="text" id="lastname" name="firstname" placeholder="Lastname" required><label style="font-size: small;color: darkgrey;">Last Name</label></div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><input type="email" id="email" name="email" placeholder="E-mail" required></br><label style="font-size: small;color: darkgrey;">example@example.com</label></div>
+                <!-- <div class="grid-item"></div> -->
+                <div class="grid-item"><input type="tel" id="mobile" name="mobile" placeholder="(000) 000-0000" required></br><label style="font-size: small;color: darkgrey;">Please enter a valid phone number</label></div>
+            </div>
+            
+            <div class="grid-container">
+                <div class="grid-item"><label style="font-size:medium;">Birth of Date</label></br></br><input type="date" id="dob" name="dob" required></div>
+                <div class="grid-item">
+                    <label style="font-size:medium;">Are you?</label></br></br>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="grid-container">
+                <div class="grid-item"><label style="font-size: medium">Student ID</label></br></br><input type="number" id="studentId" name="studentId" placeholder="Student ID" required></div>
+                <div class="grid-item"><label style="font-size: medium">Entry Year</label></br></br><input type="number" id="entryYear" name="entryYear" placeholder="Entery Year" required></div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><label style="font-size: medium">Grade</label></br></br><input type="text" id="grade" name="grade" placeholder="Enter your grade" required></div>
+                <div class="grid-item"><label style="font-size: medium">Semester</label></br></br><input type="text" id="semester" name="semester" placeholder="Enter your semester" required></div>
+            </div>
+        
+            <div class="grid-container-button">
+                <div></div><div></div>
+                <button type="submit">Next</button>
+            </div>
+
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
