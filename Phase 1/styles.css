@@ -39,11 +39,67 @@ label {
     padding: 1%;
 }
 
-input, select {
+select {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 200px;
+}
+
+#gender {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: -20px;
+}
+
+#semester {
+  padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+#month, #day, #year {
+  padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 94px;
+}
+
+#studentId {
+  padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 280px;
+    margin-left: 0px;
+}
+
+#entryYear {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: -10px;
+}
+
+#g {
+  padding: -10px;
+}
+
+input:not([type=checkbox]) {
+  width: 100%;
+  height: 40px;
+  padding: 4px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 option {
@@ -51,7 +107,7 @@ option {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding-right: 200%;
+  padding-right: 100%;
 }
 
 button {
@@ -80,24 +136,94 @@ button:hover {
     text-align: auto;
     padding-bottom: 10px;
   }
-
-  /* .grid-container-2 {
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 130px;
-  }
-
-  .grid-item-2 {
-    padding: 1px;
-    font-size: 20px;
-    text-align: auto;
-    padding-bottom: 10px;
-    padding-right: 0%;
-  } */
   
   .grid-container-button {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 0px;
   }
+
+  .grid-item-2 {
+    padding: 2px;
+    font-size: 20px;
+    text-align: auto;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .grid-item-3 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .grid-item-4 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 100px;
+  }
+  .grid-item-5 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 100px;
+  }
+
+  .grid-item-6 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 100px;
+    margin-left: -3px;
+  }
+
+  .grid-item-7 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 5px;
+    margin-left: -5px;
+  }
+
+  .grid-item-8 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 5px;
+  }
+
+  .grid-item-9 {
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    padding-right: 5px;
+  }
+
+p {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        width:97%;
+    }
+}
+
+
+@media only screen and (min-width:601px) and (max-width:1080px){
+    .container{
+        width:90%;
+    }
+}
